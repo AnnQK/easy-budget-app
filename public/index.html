@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Easy Budget App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <title>Document</title>
+
+  <body>
+    <header>
+      <h1>Easy Budget App</h1>
+    </header>
+
+    <main>
+      <div className="data">
+        <h2 class="data-title">List of expenses</h2>
+        <ul class="list"></ul>
+      </div>
+
+      <form class="form">
+        <label>
+          Type:
+          <select id="type">
+            <option value="invoice">Invoice</option>
+            <option value="payment">Payment</option>
+          </select>
+        </label>
+
+        <label>
+          To / From:
+          <input type="text" id="tofrom" />
+        </label>
+
+        <label>
+          Details:
+          <input type="text" id="details" />
+        </label>
+
+        <label>
+          Amount:
+          <input type="number" id="amount" />
+        </label>
+
+        <label>
+          Currency:
+          <select id="currency">
+            <option value="€">€</option>
+            <option value="$">$</option>
+            <option value="₽">₽</option>
+            <option value="¥">¥</option>
+          </select>
+        </label>
+
+        <button type="submit">Add</button>
+      </form>
+    </main>
+    <footer>
+      <a href="https://github.com/AnnQK">GitHub</a>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
