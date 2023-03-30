@@ -1,3 +1,7 @@
+import { Invoice } from "./classes/Invoice.js";
+import { Payment } from "./classes/Payment.js";
+import { HasFormatter } from "./interfaces/HasFormatter.js";
+
 const form = document.querySelector(".form") as HTMLFormElement;
 
 // inputs
@@ -9,5 +13,13 @@ const currency = document.querySelector("#currency") as HTMLSelectElement;
 
 form.addEventListener("submit", (e: Event): void => {
   e.preventDefault();
-  console.log(type.value, toFrom.value, amount.valueAsNumber, currency.value);
+
+  let note: HasFormatter;
+
+  if (type.value === "invoice") {
+    note = new Invoice(toFrom.value, details.value, Number(amount.value), currency.value);
+  } else {
+    note = new Payment(toFrom.value, details.value, Number(amount.value), currency.value);
+  }
+  console.log(note.format());
 });
