@@ -10,6 +10,6 @@ export class Payment implements HasFormatter {
   format(): string {
     return `${this.recipient} has got ${this.amount}${
       this.currency
-    } for ${this.details.toLowerCase()} `;
+    } for ${this.details.toLowerCase()}`;
   }
 }

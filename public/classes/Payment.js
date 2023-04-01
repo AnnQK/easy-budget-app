@@ -6,6 +6,6 @@ export class Payment {
         this.currency = currency;
     }
     format() {
-        return `${this.recipient} has got ${this.amount}${this.currency} for ${this.details.toLowerCase()} `;
+        return `${this.recipient} has got ${this.amount}${this.currency} for ${this.details.toLowerCase()}`;
     }
 }
