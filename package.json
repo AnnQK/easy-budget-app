@@ -1,23 +1,15 @@
 {
-  "name": "easy-budget-app",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
-    "typescript": "^5.0.2"
-  },
+  "name": "easy-budjet-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AnnQK/easy-budget-app.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AnnQK/easy-budget-app/issues"
-  },
-  "homepage": "https://github.com/AnnQK/easy-budget-app#readme"
+  "devDependencies": {
+    "typescript": "^4.9.3",
+    "vite": "^4.2.0"
+  }
 }
