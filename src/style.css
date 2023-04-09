@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+}
+
+#app {
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+}
+
+.list-wrapper {
+  padding: 0 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrapper-title {
+  margin-top: 50px;
+  text-align: center;
+  width: 100%;
+}
+
+.list-title {
+  text-align: center;
+  list-style: none;
+}
+
+.list {
+  padding: 0;
+  width: 50%;
+}
+
+.form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn {
+  width: 220px;
+  height: 45px;
+}
+
+.footer {
+  margin-top: auto;
+}

@@ -1,16 +1,11 @@
 export function renderLayout(): void {
   document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
-<div>
+<div class="container">
 <header>
-<h1>Easy Budget App</h1>
+<h1 class="header">Easy Budget App</h1>
 </header>
 
 <main>
-<div className="data">
-  <h2 class="data-title">List of expenses</h2>
-  <ul class="list"></ul>
-</div>
-
 <form class="form">
   <label>
     Type:
@@ -45,18 +40,20 @@ export function renderLayout(): void {
     </select>
   </label>
 
-  <button type="submit">Add</button>
+  <button class="btn" type="submit">Add</button>
 </form>
-<div className="listWrapper">
-  <ul class="invoices-list">
+
+<div class="list-wrapper">
+<h2 class="wrapper-title">List of expenses</h2>
+<ul class="invoices-list list">
     <li class="list-title">Invoices</li>
   </ul>
-  <ul class="payments-list">
+  <ul class="payments-list list">
     <li class="list-title">Payments</li>
   </ul>
 </div>
 </main>
-<footer>
+<footer class="footer">
 <a href="https://github.com/AnnQK">GitHub</a>
 </footer>
 </div>

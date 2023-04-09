@@ -1,9 +1,10 @@
-import { renderLayout } from "./renderLayout";
+import { renderLayout } from "./Layout/renderLayout";
 import { Invoice } from "./classes/Invoice.js";
 import { ListTemplate } from "./classes/ListTemplate.js";
 import { Payment } from "./classes/Payment.js";
 import { HasFormatter } from "./interfaces/HasFormatter.js";
 import { Currencies } from "./types/Currencies.js";
+import "./style.css";
 
 renderLayout();
 
